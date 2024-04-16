@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 95%;
+  max-width: 1200px;
+  /* background-color: pink;   */
+  margin: auto;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.headerTopLeft {
+  display: flex;
+}
+header a {
+  text-decoration: none;
+  color: rgb(46, 46, 46);
+  font-family: "Raleway", sans-serif;
+  line-height: 40px;
+  /* background-color: #783333; */
+  padding: 0 10px;
+  transition: 300ms;
+}
+.headerTopRight {
+  display: flex;
+}
+.headerTopRight button {
+  width: 40px;
+  border: none;
+  outline: 1px solid #d6d5d5;
+  background-color: rgba(255, 255, 255, 0.493);
+  box-sizing: border-box;
+  background-image: url(img/search.svg);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+}
+.headerTopRight .bag {
+  background-image: url(img/bag.svg);
+}
+.headerTopRight .heart {
+  background-image: url(img/heart.svg);
+}
+.headerTopRight .person {
+  background-image: url(img/avatar-people-profile-svgrepo-com.svg);
+}
+header .logo {
+  background-image: url(img/diamond.svg);
+  box-sizing: border-box;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.headerBottomRight {
+  display: flex;
+  align-items: center;
+}
+
+.headerTop {
+  border-bottom: 1px solid #d6d5d5;
+}
+
+header button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+header a:not(.logo):hover {
+  background-color: #f0f0f0;
+}
+video {
+  width: 100%;
+}
+.heroInfo {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.arrowLink img {
+  height: 20px;
+  margin-left: 20px;
+}
+h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #333333;
+  margin-top: 120px;
+}
+.hero h2 {
+  color: rgba(255, 255, 255, 0.728);
+  margin-bottom: 10px;
+  font-weight: 100;
+  margin-top: 0;
+}
+.hero h3 {
+  color: rgba(255, 255, 255, 0.557);
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 100;
+  margin-bottom: 150px;
+}
+.arrowLink {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.678);
+  display: flex;
+  align-items: center;
+  transition: 300ms;
+  font-family: "Raleway", sans-serif;
+}
+.arrowLink:hover {
+  opacity: 0.5;
+}
+
+.section {
+
+}
+.cards img {
+  width: 100%;
+}
+.cards {
+  display: flex;
+  gap: 15px;
+}
+.card {
+  flex: 1;
+}
+.section h3 {
+  font-family: "Raleway", sans-serif;
+  margin-top: 10px;
+  color: #333333;
+}
+
+.collection {
+  background-image: url(img/men.webp);
+  width: 50%;
+  height: 600px;
+  background-size: cover;
+  /* чтобы абсолютные дети выравнивались по своему родителю */
+  position: relative;
+}
+.collections {
+  display: flex;
+  flex-wrap: wrap;
+}
+.collection a {
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+}
+#taro {
+  background-image: url(img/side.webp);
+}
+#charity {
+  background-image: url(img/charity.webp);
+}
+#objects {
+  background-image: url(img/books.webp);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#men {
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.collection div {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#taro h3,
+#taro a,
+#charity h3,
+#charity a {
+  color: #ffffff;
+}
+.collection h3 {
+  font-family: "Playfair Display", sans-serif;
+}
+.hitsHeading{
+
+  display: flex;
+  justify-content: space-between;
+}
+.hitsHeading a{
+  color: #333333;
+}
+.hitsHeading img{
+  filter: invert(0.8);
+}
