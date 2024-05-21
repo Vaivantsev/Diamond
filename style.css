@@ -119,7 +119,6 @@ h2 {
 }
 
 .section {
-
 }
 .cards img {
   width: 100%;
@@ -185,14 +184,250 @@ h2 {
 .collection h3 {
   font-family: "Playfair Display", sans-serif;
 }
-.hitsHeading{
-
+.hitsHeading {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 120px 0 30px;
 }
-.hitsHeading a{
+.hitsHeading a {
   color: #333333;
 }
-.hitsHeading img{
+.hitsHeading img {
   filter: invert(0.8);
+}
+.hitsHeading h2 {
+  margin: 0;
+}
+.hitCards img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+.hitCards {
+  display: flex;
+  gap: 15px;
+}
+.hitCard {
+  width: 25%;
+}
+.hitCard button {
+  width: 60px;
+  height: 60px;
+  background-image: url(img/heart.svg);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  background-color: transparent;
+  opacity: 0.8;
+  transition: 300ms;
+  cursor: pointer;
+}
+.hitTop {
+  position: relative;
+}
+.hitCard button:hover {
+  opacity: 0.4;
+}
+.hitCard .line {
+  background-color: rgba(107, 107, 107, 0.701);
+  height: 2px;
+  flex: 1;
+}
+.lines {
+  display: flex;
+}
+.hitSale {
+  display: flex;
+  justify-content: space-between;
+  margin: 7px 0;
+}
+.hitCard {
+  font-family: "Raleway", sans-serif;
+}
+.hitCard p {
+  color: #33333382;
+}
+.lines {
+  gap: 3px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 3px;
+}
+.lines:hover {
+  background-color: #2c2c2c8f;
+}
+.surprise {
+  background-color: #f0f0f0;
+  padding: 120px;
+}
+
+.surpriseFather {
+  display: flex;
+  align-items: center;
+}
+.surpriseFather .composition {
+  width: 40%;
+}
+.surpriseLeft {
+  width: 60%;
+}
+h1 {
+  font-family: "Playfair Display", sans-serif;
+  letter-spacing: 2px;
+  font-size: 50px;
+  color: rgba(34, 34, 34, 0.733);
+}
+.surprise a {
+  margin-top: 50px;
+  color: rgb(34, 34, 34);
+}
+.surprise a img {
+  filter: invert(80%);
+}
+.about h2 {
+  margin-top: 150px;
+}
+.about p {
+  font-family: "Raleway", sans-serif;
+  color: #3b3b3bdc;
+  width: 70%;
+  margin-bottom: 80px;
+}
+
+.subscribe .container {
+  margin: 80px auto;
+  max-width: 700px;
+}
+.subscribe h4 {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #242424e1;
+  line-height: 25px;
+}
+.subscribe .container div {
+  display: flex;
+  gap: 7px;
+  height: 40px;
+}
+.subscribe input {
+  flex: 5;
+  padding: 7px;
+  font-family: "Raleway", sans-serif;
+  border: 1px solid #b9b9b9;
+  outline: none;
+}
+.subscribe button {
+  flex: 3;
+  background-color: #333333;
+  border: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  border-radius: 1px;
+  transition: 0.2s;
+}
+.subscribe input:focus::placeholder {
+  color: white;
+}
+.subscribe input::placeholder {
+  transition: 0.3s;
+}
+
+.subscribe button:hover {
+  background-color: #333333d8;
+  cursor: pointer;
+}
+.serteficat{
+  border-bottom: 1px solid #c1c1c1b7;
+  border-top: 1px solid #c1c1c1b7;
+  padding: 30px 0;
+}
+
+.serteficats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.serteficats img{
+  width: 7%;
+}
+
+.serteficats p{
+  font-family: "Raleway", sans-serif;
+  color: #2d2d2d;
+}
+.serteficats a{
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: #2d2d2d;
+  line-height: 26px;
+}
+
+.serteficats .number{
+  color: #000000;
+  /* font-weight: 400; */
+}
+.call{
+  display: flex;
+  flex-direction: column;
+  
+}
+.me a{
+ font-size: 25px;
+ margin-bottom: 18px;
+ display: block;
+
+}
+.me p{
+  margin-bottom: 18px;
+}
+.telegram p{
+  margin-top: 30px;
+}
+ul{
+  list-style: none;
+}
+
+.end p {
+  font-family: "Raleway", sans-serif;
+  color: #2d2d2d9d;
+}
+.end{
+  padding: 30px 0;
+}
+.serteficats button{
+  background-image: url(img/vk.svg);
+  background-size: 60% ;
+  width: 40px;
+  height: 40px;
+  border-radius: 10000000px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  border: 1px solid rgba(54, 54, 54, 0.781);
+}
+.telegram{
+  display: flex;
+  gap: 15px;
+}
+#tg{
+  background-image: url(img/telegram.svg);
+}
+#ws{
+  background-image: url(img/whatsapp.svg);
+}
+.serteficats a:hover, .serteficats button:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.categories{
+  margin-bottom: 100px;
 }
